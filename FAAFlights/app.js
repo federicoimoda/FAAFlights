@@ -10,6 +10,8 @@ var app = async function (){
 
     db.initDataBase();
 
+    //await flight.showCount_Flights();
+
     if(config.flight_delete) { await flight.flight_deleteAll() };
     if(config.loadFlights) { await data.loadData() };
     

@@ -4,6 +4,8 @@ const gen = require("../util/generic");
 const config = require("../config");
 const flight_controller = require("../controllers/flightController");
 
+var idVuelo = config.startIdFlight;
+
 var inputFilePath = "";
 
 exports.loadData = async function () {
@@ -15,7 +17,7 @@ exports.loadData = async function () {
     }
 
     if (config.load_data) {
-        var i = 1;
+        var i = idVuelo;
         startLog();
         fs.createReadStream(inputFilePath)
             .pipe(csv())

@@ -32,6 +32,13 @@ exports.flight_deleteAll = async function () {
     }
 }
 
+exports.showCount_Flights = async function () {
+
+   const count_flights = await Flight.find().count();
+   console.log("Cantidad de Vuelos: " + count_flights);
+
+}
+
 exports.publishFlight = async function () {
 
     while (true) {
