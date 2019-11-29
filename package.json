@@ -2,17 +2,16 @@
   "name": "faaflights",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "csv-parser": "^2.3.2",
-    "csvjson": "^5.1.0",
-    "csvtojson": "^2.0.10",
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "mongoose": "^5.7.13"
   }
 }

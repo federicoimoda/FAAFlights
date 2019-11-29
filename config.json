@@ -1,0 +1,11 @@
+{
+    "port" : "8081",
+    "flightdatahub_url" : "localhost:3000/api/",
+    "mongo_url" : "mongodb://localhost:27017/FAAFlightsDB",
+    "load_data" : true,
+    "load_test_data" : true,
+    "inputFilePath_test": "/Users/fimoda/Obligatorios/Arquitectura_Software/FAAFlights/data/flights_test.csv",
+    "inputFilePath_prod": "/Users/fimoda/Obligatorios/Arquitectura_Software/FAAFlights/data/flights.csv",
+    "flight_delete": false,
+    "loadFlights": false
+}
